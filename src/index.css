@@ -1,0 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+:root{
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --font-family: Roboto;
+    --header-bg: #1F2937;
+    --footer-bg: #1F2937;
+    --button-bg: #007bff;
+    --button-text: #ffffff;
+    /* --heading-color: #222222; */
+    /* --para-color: #222222; */
+}
+
+
+/* Dark theme override */
+ [data-theme='dark'] {
+  --bg-color: #1a1a1a;
+  --text-color: #f0f0f0;
+  --header-bg: #1F2937;
+  --footer-bg: #1F2937;
+  --button-bg: #4f46e5;
+  --button-text: #e0e0e0;
+  --heading-color: #ffffff;
+  --para-color: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+} 
+h1 {
+  color: var(--heading-color);
+  transition: color 0.3s ease;
+}
+p{
+    color: var(--para-color);
+    transition: color 0.3s ease;
+}
+
+
+ header {
+  background-color: var(--header-bg);
+
+}
+
+footer {
+  background-color: var(--footer-bg);
+
+}
+
+/* button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
+}  */
+  *{
+    font-family: Roboto;
+  }
+
+.no-scroll{
+    overflow: hidden;
+}
